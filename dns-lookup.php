@@ -6,8 +6,8 @@
 
 	try {
 		$flag = getenv('FLAG');
-		$fileName = 'flag.txt';
-		$file = fopen($fileName, 'w');
+        $filePath = '/tmp/flag.txt';
+		$file = fopen($filePath, 'w');
 		fwrite($file, $flag);
 		fclose($file);
 
